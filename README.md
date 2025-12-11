@@ -1,4 +1,4 @@
-# 🗺️ Seletor de Regional GGNET - SZ.CHAT
+# 🗺️ Seletor de Regional ALT - SZ.CHAT
 
 <div align="center">
   <img src="https://avatars.githubusercontent.com/u/179055349?v=4" alt="Logo" width="120">
@@ -15,14 +15,6 @@
 ---
 
 Este UserScript adiciona um menu flutuante moderno ao SZ.chat, permitindo que os técnicos selecionem a regional do cliente de forma rápida e visual. A escolha fica salva no navegador e é utilizada automaticamente pelo **Script de Planilha**.
-
-## ✨ Funcionalidades
-
-* **🎨 Novo Visual:** Botões estilo "Badge" (arredondados) com cores pastéis para fácil identificação.
-* **📍 Regionais Atualizadas:** Inclui apenas as novas regionais (CTA, CCO, PYE, MFA, JBA).
-* **💾 Memória Inteligente:** A regional selecionada fica salva mesmo se fechar o navegador.
-* **🔎 Busca Rápida:** Campo de pesquisa para filtrar regionais instantaneamente.
-* **📱 Responsivo:** O menu se ajusta à tela e não é cortado pelas bordas do chat.
 
 ## ⚡ Instalação Rápida (1 Clique)
 
