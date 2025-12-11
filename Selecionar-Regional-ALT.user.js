@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Selecionar Regional GGNET - SZ.CHAT - JoaoAGS/Samuel
+// @name         Selecionar Regional ALT - SZ.CHAT - JoaoAGS/Samuel
 // @namespace    http://tampermonkey.net/
 // @version      3.0
 // @description  Seletor de regional estilo "Badges" (Apenas Novas)
