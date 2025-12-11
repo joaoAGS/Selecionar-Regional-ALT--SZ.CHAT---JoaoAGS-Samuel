@@ -4,8 +4,8 @@
   <img src="https://avatars.githubusercontent.com/u/179055349?v=4" alt="Logo" width="120">
   <br><br>
   
-  <a href="https://cdn.jsdelivr.net/gh/joaoAGS/Selecionar-Regional-GGNET---SZ.CHAT@main/Selecionar%20Regional%20GGNET%20-%20SZ.CHAT.user.js">
-    <img src="https://img.shields.io/badge/⬇️_Instalar_Script-v2.6-success?style=for-the-badge&logo=tampermonkey" alt="Instalar Script">
+  <a href="https://raw.githubusercontent.com/joaoAGS/Selecionar-Regional-ALT--SZ.CHAT---JoaoAGS-Samuel/main/Selecionar-Regional-ALT.user.js">
+    <img src="https://img.shields.io/badge/⬇️_Instalar_Script-v3.0-success?style=for-the-badge&logo=tampermonkey" alt="Instalar Script">
   </a>
   
   <br>
@@ -19,7 +19,7 @@ Este UserScript adiciona um menu flutuante moderno ao SZ.chat, permitindo que os
 ## ⚡ Instalação Rápida (1 Clique)
 
 1. Certifique-se de ter a extensão **Tampermonkey** instalada no navegador.
-2. **[CLIQUE AQUI PARA INSTALAR O SCRIPT](https://cdn.jsdelivr.net/gh/joaoAGS/Selecionar-Regional-GGNET---SZ.CHAT@main/Selecionar%20Regional%20GGNET%20-%20SZ.CHAT.user.js)**
+2. **[CLIQUE AQUI PARA INSTALAR O SCRIPT](https://raw.githubusercontent.com/joaoAGS/Selecionar-Regional-ALT--SZ.CHAT---JoaoAGS-Samuel/main/Selecionar-Regional-ALT.user.js)**
 3. Uma janela do Tampermonkey abrirá. Clique em **"Instalar"**.
 4. Recarregue a página do SZ.chat (F5).
 

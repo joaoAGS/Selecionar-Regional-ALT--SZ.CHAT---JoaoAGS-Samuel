@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Selecionar Regional GGNET - SZ.CHAT - JoaoAGS/Samuel
 // @namespace    http://tampermonkey.net/
-// @version      2.6
+// @version      3.0
 // @description  Seletor de regional estilo "Badges" (Apenas Novas)
 // @author       João/Samuel
 // @icon         https://avatars.githubusercontent.com/u/179055349?v=4
@@ -11,8 +11,8 @@
 // @run-at       document-idle
 //
 // --- ESTRATÉGIA DE ATUALIZAÇÃO ---
-// @updateURL    https://raw.githubusercontent.com/joaoAGS/Selecionar-Regional-GGNET---SZ.CHAT/main/Selecionar%20Regional%20GGNET%20-%20SZ.CHAT.user.js
-// @downloadURL  https://raw.githubusercontent.com/joaoAGS/Selecionar-Regional-GGNET---SZ.CHAT/main/Selecionar%20Regional%20GGNET%20-%20SZ.CHAT.user.js
+// @updateURL    https://raw.githubusercontent.com/joaoAGS/Selecionar-Regional-ALT--SZ.CHAT---JoaoAGS-Samuel/main/Selecionar-Regional-ALT.user.js
+// @downloadURL  https://raw.githubusercontent.com/joaoAGS/Selecionar-Regional-ALT--SZ.CHAT---JoaoAGS-Samuel/main/Selecionar-Regional-ALT.user.js
 // ==/UserScript==
 
 (function () {
