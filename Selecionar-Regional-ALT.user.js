@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Selecionar Regional ALT - SZ.CHAT - JoaoAGS/Samuel
 // @namespace    http://tampermonkey.net/
-// @version      3.0
-// @description  Seletor de regional estilo "Badges" (Apenas Novas)
+// @version      3.1
+// @description  Seletor de regional estilo "Badges" (Posicionado pelo Protocolo)
 // @author       João/Samuel
 // @icon         https://avatars.githubusercontent.com/u/179055349?v=4
 // @match        *://*.ggnet.sz.chat/*
@@ -188,30 +188,50 @@
         }
     });
 
+    // --- FUNÇÃO PARA ENCONTRAR O PROTOCOLO POR TEXTO ---
+    function encontrarElementoProtocolo() {
+        const xpath = "//*[contains(text(), 'Protocolo:')]";
+        const result = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null);
+        return result.singleNodeValue;
+    }
+
     // --- OBSERVER ---
     const observer = new MutationObserver(() => {
-        const botoes = Array.from(document.querySelectorAll('a.item.text-ellipsis'));
         const btnExistente = document.querySelector('#btn-selecionar-regional');
+        if (btnExistente) return;
 
-        const btnModelo = botoes.find(el => el.textContent.includes('Baixar Mídia'));
+        // 1. Procura o elemento de texto "Protocolo:"
+        const elementoTextoProtocolo = encontrarElementoProtocolo();
 
-        if (!btnModelo || btnExistente) return;
+        if (elementoTextoProtocolo) {
+            // 2. Encontra o container "pai" desse texto (geralmente uma div com classe 'item' ou 'label')
+            const containerProtocolo = elementoTextoProtocolo.closest('.item') || elementoTextoProtocolo.parentElement;
 
-        const novoBotao = btnModelo.cloneNode(true);
-        novoBotao.id = 'btn-selecionar-regional';
-        novoBotao.href = 'javascript:void(0)';
+            if (containerProtocolo) {
+                // 3. Cria o novo botão (Sem depender de clone do Baixar Mídia)
+                const novoBotao = document.createElement('a');
+                novoBotao.id = 'btn-selecionar-regional';
+                novoBotao.className = 'item text-ellipsis'; // Classes nativas
+                novoBotao.href = 'javascript:void(0)';
+                
+                // Estilo para separar visualmente do protocolo
+                novoBotao.style.marginTop = '5px';
+                novoBotao.style.borderTop = '1px solid #eee'; 
 
-        const salvo = localStorage.getItem('sz_regional_selecionada') || 'Selecionar Regional';
-        novoBotao.innerHTML = `<i class="icon map marker alternate"></i> <span id="reg-label">${salvo}</span>`;
+                const salvo = localStorage.getItem('sz_regional_selecionada') || 'Selecionar Regional';
+                novoBotao.innerHTML = `<i class="icon map marker alternate"></i> <span id="reg-label">${salvo}</span>`;
 
-        novoBotao.addEventListener('click', (e) => {
-            e.stopPropagation();
-            e.preventDefault();
-            toggleDropdown(novoBotao);
-        });
+                novoBotao.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    toggleDropdown(novoBotao);
+                });
 
-        btnModelo.parentElement.insertBefore(novoBotao, btnModelo);
+                // 4. Insere LOGO APÓS o container do protocolo
+                containerProtocolo.parentNode.insertBefore(novoBotao, containerProtocolo.nextSibling);
+            }
+        }
     });
 
     observer.observe(document.body, { childList: true, subtree: true });
-})();
+})();s

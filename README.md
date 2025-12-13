@@ -5,7 +5,7 @@
   <br><br>
   
   <a href="https://raw.githubusercontent.com/joaoAGS/Selecionar-Regional-ALT--SZ.CHAT---JoaoAGS-Samuel/main/Selecionar-Regional-ALT.user.js">
-    <img src="https://img.shields.io/badge/⬇️_Instalar_Script-v3.0-success?style=for-the-badge&logo=tampermonkey" alt="Instalar Script">
+    <img src="https://img.shields.io/badge/⬇️_Instalar_Script-v3.1-success?style=for-the-badge&logo=tampermonkey" alt="Instalar Script">
   </a>
   
   <br>
